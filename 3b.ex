@@ -6,8 +6,6 @@ defmodule AOC do
         inputFileStr = File.read!(inputFilename)
         inputArray = String.split(inputFileStr,"\n", trim: true)
 
-        IO.puts(length(inputArray))
-
         inputAsStrArrays = Enum.map(inputArray, fn(x) -> String.split(x, Regex.compile!("\s"), trim: true) end)
 
         inputAsIntArrays = Enum.map(inputAsStrArrays,

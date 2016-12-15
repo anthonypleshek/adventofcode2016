@@ -1,0 +1,2 @@
+rect 2x2
+rotate row y=1 by 3
